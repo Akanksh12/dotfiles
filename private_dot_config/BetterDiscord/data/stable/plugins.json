@@ -1,0 +1,16 @@
+{
+    "CallTimeCounter": true,
+    "CreationDate": true,
+    "FreeEmojis": true,
+    "DoNotTrack": true,
+    "GameActivityToggle": true,
+    "InvisibleTyping": true,
+    "LastMessageDate": true,
+    "SecretRingTone": true,
+    "ServerDetails": true,
+    "ShowHiddenChannels": true,
+    "TypingUsersAvatars": true,
+    "WhoReacted": true,
+    "ZeresPluginLibrary": true,
+    "BDFDB": true
+}
