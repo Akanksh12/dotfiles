@@ -14,7 +14,6 @@ alias rr "curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/mas
 alias install "yay --noconfirm -S "
 alias remove "yay -Rncs "
 alias lsblk "lsblk -e 7"
-alias btop "btop --utf-force"
 
 starship init fish | source
 set fish_greeting
@@ -31,3 +30,5 @@ fish_add_path /home/akanksh/.spicetify
 fish_add_path /usr/local/go/bin
 fish_add_path /home/akanksh/.local/bin
 fish_add_path /home/akanksh/.cargo/bin
+
+set fish_color_autosuggestion white

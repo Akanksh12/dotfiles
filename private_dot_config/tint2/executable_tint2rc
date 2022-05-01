@@ -199,7 +199,7 @@ launcher_item_app = x-terminal-emulator.desktop
 
 #-------------------------------------
 # Clock
-time1_format = %H:%M
+time1_format = %r
 time2_format = %A %d %B
 time1_font = sans bold 8
 time1_timezone = 
