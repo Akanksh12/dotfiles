@@ -6,6 +6,8 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
+:set expandtab
+:set smartcase
 
 call plug#begin()
 
@@ -20,6 +22,8 @@ Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'navarasu/onedark.nvim'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/fzf.vim'
 
 set encoding=UTF-8
 

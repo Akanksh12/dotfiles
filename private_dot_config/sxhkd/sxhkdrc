@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	rofi -show drun
+	$HOME/.config/rofi/launchers/colorful/launcher.sh
 
 # brightness down
 XF86MonBrightnessDown

@@ -14,6 +14,9 @@ alias rr "curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/mas
 alias install "yay --noconfirm -S "
 alias remove "yay -Rncs "
 alias lsblk "lsblk -e 7"
+alias gs="git status"
+alias g="git"
+alias gd='git diff'
 
 starship init fish | source
 set fish_greeting
@@ -22,6 +25,8 @@ set fish_greeting
 alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 
 export BROWSER=chromium
+export EDITOR=nvim
+export TERM=alacritty
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
