@@ -72,7 +72,8 @@ keys = [
     Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -c 0 sset Master 1- unmute")),
     Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -c 0 sset Master 1+ unmute")),
     # application launcher(rofi)
-    Key([mod], "d", lazy.spawn("rofi -show drun"))
+    Key([mod], "d", lazy.spawn("rofi -show drun")),
+    Key([], "Print", lazy.spawn("flameshot screen"))
 ]
 
 groups = [Group(i) for i in "123456789"]
@@ -151,7 +152,8 @@ screens = [
             24,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
-            border_color=["#5e81ac", "000000", "5e81ac", "000000"]
+            border_color="#5e81ac",
+            background="#1e1e2e"
         ),
     ),
 ]
@@ -207,4 +209,4 @@ def autostart():
 #
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
-wmname = "LG3D"
+wmname = "Qtile"
