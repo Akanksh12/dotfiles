@@ -1,0 +1,11 @@
+#!/bin/sh
+
+xrdb -merge ~/.cache/wal/colors.Xresources && echo "Xresources loaded" &
+feh --bg-fill $(cat ~/.cache/wal/wal) && echo "nitrogen started" &
+pidof picom || picom --config ~/.config/bspwm/picom.conf && echo "picom started" &
+pidof kitty || kitty --config ~/.config/bspwm/kitty.conf && echo "kitty started" &
+pidof librewolf || librewolf && echo "librewolf started" &
+#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 && echo "polkit started" &
+#systemctl --user start pulseaudio.service --now && echo "pulseaudio started" & #for some reason it doesn't auto start
+pidof polybar || ~/.config/bspwm/polybar/launch.sh && echo "polybar launched" &
+pidof dunst || dunst -conf ~/.config/bspwm/dunst/dunstrc && echo "dunst launched" &

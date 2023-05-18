@@ -1,0 +1,51 @@
+set volume keybinds
+
+XF86 key codes can be test by xev -event keyboard
+
+https://github.com/baskerville/sxhkd/issues/122
+@super
+	rofi --show drun
+
+doesn't work but xcape can be used for that apparently. Can't find ksuperkey(the thing arch craft uses for this) so i'm just gonna use xcape.
+
+http://localhost:9010/https://www.youtube.com/channel/UCjT2hTD2u5aYrloCr1xtfjg
+this dude has a series on bspwm
+
+finally understood how nodes and selection works in bspwm
+
+[REFERENCE#]DESCRIPTOR(.MODIFIER)* this line explains stuff
+[] means optional
+() means required
+! is 'not' basically
+
+so ```any.!focused``` will return any window which *isn't* focused
+note: this only works in /bin/sh and not bash
+
+direction in bspwm is using the compass because you can flip stuff around so up down left right becomes complicated.
+
+```bspc query -M --names``` shows the names of all the monitors
+
+need to configure polybar
+
+and configure neovim
+
+```polybar-msg cmd restart``` is to restart polybar
+
+you can't see the polybar border by default.
+margin-top = 0 was not working because border-size = 4. the border is invisible for some reason
+
+
+need to compile bspwm with backlight(aka brightness) support
+customize rofi 
+
+both are next
+
+customize neovim with pywal i guess
+ok got it sorta working but lualine is broken with it
+
+
+screenshot binds
+rofi 
+configure dunst
+
+using flameshot (rip minimalism)
