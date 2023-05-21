@@ -140,7 +140,7 @@ export XCURSOR_PATH=/usr/share/icons:$XDG_DATA_HOME/icons
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
-. "$XDG_DATA_HOME"/cargo/env
+. "$XDG_DATA_HOME/cargo/env"
 eval "$(zoxide init bash)"
 
 # pnpm
